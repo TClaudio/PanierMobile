@@ -21,7 +21,7 @@ android:background="@color/white">
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:background="@drawable/edittext_background"
-    android:hint="  Name"
+    android:hint="Prénom"
     android:padding="10dp"
     android:textSize="15dp"
     android:textColor="@color/white"
@@ -31,25 +31,60 @@ android:background="@color/white">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/reg_img"
     android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/name1_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="Nom"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="3dp"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_img"
+        android:drawablePadding="10dp"/>
 
-<EditText
-    android:id="@+id/email_reg"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:background="@drawable/edittext_background"
-    android:hint="  Email"
-    android:padding="10dp"
-    android:textSize="15dp"
-    android:textColor="@color/white"
-    android:elevation="3dp"
-    android:layout_marginTop="10dp"
-    app:layout_constraintWidth_percent=".8"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/name_reg"
-    android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/email_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="  Email"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name1_reg"
+        app:layout_constraintWidth_percent=".8" />
+    <EditText
+        android:id="@+id/phone_reg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:hint="  Telephone"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:paddingRight="5dp"
+        android:elevation="3dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_reg"
+        android:drawablePadding="10dp"/>
 
-<EditText
+
+    <EditText
     android:id="@+id/passeword_reg"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
@@ -58,31 +93,15 @@ android:background="@color/white">
     android:drawablePadding="10dp"
     android:elevation="3dp"
     android:padding="10dp"
+    android:inputType="textPassword"
     android:hint="  Mode passe"
     android:textColor="@color/white"
     android:textSize="15dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/email_reg"
+    app:layout_constraintTop_toBottomOf="@+id/phone_reg"
     app:layout_constraintWidth_percent=".8" />
 
-<EditText
-    android:id="@+id/phone_reg"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:background="@drawable/edittext_background"
-    android:hint="  Telephone"
-    android:padding="10dp"
-    android:textSize="15dp"
-    android:textColor="#fff"
-    android:paddingRight="5dp"
-    android:elevation="3dp"
-    android:layout_marginTop="10dp"
-    app:layout_constraintWidth_percent=".8"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/passeword_reg"
-    android:drawablePadding="10dp"/>
 
 <CheckBox
     android:id="@+id/checkBox"
@@ -106,6 +125,7 @@ android:background="@color/white">
     android:padding="10dp"
     android:onClick="signup"
     android:text=" Creer mon compte"
+    android:layout_marginTop="10dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.504"
     app:layout_constraintStart_toStartOf="parent"
@@ -117,15 +137,15 @@ android:background="@color/white">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="J'ai deja une counte!"
+        android:text="J'ai déjà une Compte!"
         android:textSize="17dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_btn"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.034" />
 
     <TextView
     android:id="@+id/sign_in"
