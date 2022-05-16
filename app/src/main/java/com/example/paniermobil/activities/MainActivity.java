@@ -2,10 +2,12 @@ package com.example.paniermobil.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.example.paniermobil.R;
 import com.example.paniermobil.fragments.HomeFragment;
@@ -29,13 +31,14 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
 
     Fragment homeFragment;
-    ProgressBar progressBar;
+    ProgressBar progressBar;                       
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
     FirebaseAuth auth;
 
     Toolbar toolbar;
+    private MenuItem item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         loadFragment(homeFragment);
     }
 
+
     private void loadFragment(Fragment homeFragment) {
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -60,9 +64,35 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu,menu);
+        //getMenuInflater().inflate(R.menu.main_menu,menu);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.nav_profile:
+                Toast.makeText(this, "Profile Selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, UserProfile.class));
+                return true;
+        }
+            return super.onOptionsItemSelected(item);
+    }
+
+
+        //    public boolean onOptionItemSelected(MenuItem item){
+//        this.item = item;
+//        switch (item.getItemId()){
+//            case R.id.nav_profile:
+//                Toast.makeText(this, "Profile Selected", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(MainActivity.this,MainActivity.class));
+//                return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//
+//    }
 
 //    @Override
 //    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -74,4 +104,4 @@ public class MainActivity extends AppCompatActivity {
 //        }else if(id == R.id.menu_cart){
 //            startActivity(new Intent(MainActivity.this,CartActivity.class));
 
-    }
+}

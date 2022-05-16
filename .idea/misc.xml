@@ -3,8 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_resgistration.xml" value="0.25" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable-v24/onboardscreen1.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable-v24/onboardscreen2.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable-v24/onboardscreen3.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/ic_menu_camera.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/drawable/side_nav_bar.xml" value="0.121" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_details.xml" value="0.15715579710144928" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_login.xml" value="0.12" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_on_boarding.xml" value="0.209375" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_resgistration.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_show_all.xml" value="0.15715579710144928" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/activity_user_profile.xml" value="0.22" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/app_bar_main.xml" value="0.2" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/layout/nav_header_main.xml" value="0.15715579710144928" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/menu/main.xml" value="0.209375" />
+        <entry key="..\:/Users/Alpha/Documents/Claudio-android/Paniermobile2/app/src/main/res/menu/main_menu.xml" value="0.209375" />
         <entry key="..\:/Users/sander kerby/AndroidStudioProjects/Paniermobil/app/src/main/res/drawable-v24/onboardscreen1.xml" value="0.11197916666666667" />
         <entry key="..\:/Users/sander kerby/AndroidStudioProjects/Paniermobil/app/src/main/res/drawable/edittext_background.xml" value="0.1" />
         <entry key="..\:/Users/sander kerby/AndroidStudioProjects/Paniermobil/app/src/main/res/layout/activity_details.xml" value="0.16666666666666666" />
@@ -40,7 +61,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.1388888888888889" />
+        <option name="scale" value="0.2696629213483146" />
       </ProjectState>
     </option>
   </component>

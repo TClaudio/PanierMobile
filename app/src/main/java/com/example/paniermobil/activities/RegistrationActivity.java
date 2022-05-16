@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RegistrationActivity extends AppCompatActivity {
 
-    EditText name,email,password,phone;
+    EditText firstName,lastName,email,password,phone;
 
     private FirebaseAuth auth;
 
@@ -36,7 +36,8 @@ public class RegistrationActivity extends AppCompatActivity {
             startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
             finish();
         }
-        name = findViewById(R.id.name_reg);
+        firstName = findViewById(R.id.name_reg);
+        lastName = findViewById(R.id.name1_reg);
         email = findViewById(R.id.email_reg);
         password = findViewById(R.id.passeword_reg);
         phone = findViewById(R.id.phone_reg);
@@ -56,12 +57,18 @@ public class RegistrationActivity extends AppCompatActivity {
     }
     public void signup(View view){
 
-        String userName = name.getText().toString();
+
+        String userfirstName = firstName.getText().toString();
+        String userlastName = lastName.getText().toString();
         String userEmail = email.getText().toString();
         String userPassword = password.getText().toString();
         String userPhone = phone.getText().toString();
 
-        if (TextUtils.isEmpty(userName)){
+        if (TextUtils.isEmpty(userfirstName)){
+            Toast.makeText(this, "Entre votre nom", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (TextUtils.isEmpty(userlastName)){
             Toast.makeText(this, "Entre votre nom", Toast.LENGTH_SHORT).show();
             return;
         }
@@ -88,10 +95,10 @@ public class RegistrationActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (task.isSuccessful()){
-                            Toast.makeText(RegistrationActivity.this, "Successfullu Registered", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistrationActivity.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
                         }else{
-                            Toast.makeText(RegistrationActivity.this, "Registered Failled"+task.getException(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegistrationActivity.this, "Registration Failed"+task.getException(), Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
