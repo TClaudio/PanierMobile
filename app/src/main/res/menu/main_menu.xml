@@ -18,7 +18,7 @@
           android:icon="@drawable/ic_menu_gallery"
           android:title="Accueil" />
       <item
-          android:id="@+id/nav_slideshow"
+          android:id="@+id/nav_product"
           android:icon="@drawable/ic_menu_slideshow"
           android:title="Nouveau Produit" />
       <item

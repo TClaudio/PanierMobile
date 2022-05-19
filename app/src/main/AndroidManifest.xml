@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Paniermobil">
         <activity
+            android:name=".activities.about_us"
+            android:exported="false" />
+        <activity
             android:name=".activities.NewProduct"
             android:exported="false" />
         <activity

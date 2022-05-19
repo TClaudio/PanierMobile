@@ -74,8 +74,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.nav_profile:
-                Toast.makeText(this, "Profile Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this, UserProfile.class));
+                return true;
+            case R.id.nav_product:
+                Toast.makeText(this, "Nouveau Produit", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, NewProduct.class));
                 return true;
         }
             return super.onOptionsItemSelected(item);
